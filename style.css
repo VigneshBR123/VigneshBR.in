@@ -1,0 +1,433 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(231, 230, 230);
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo{
+    height: 230px;
+    margin-left: 40px;
+}
+.navbar{
+    margin-top: -83px;
+}
+nav ul{
+    margin-top: -200px;
+    margin-right: 80px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00bf63;
+    position: absolute;
+    left: 2px;
+    bottom: -1px;
+    transition: 0.2s;
+}
+nav ul li a:hover::after{
+    width: 80%;
+}
+#banner{
+    background-image: url(Images/Blac.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 160px;
+    color: rgb(231, 230, 230);
+    margin-top: -218px;
+    height: 730px;
+}
+#top_head{
+    font-size: 65px;
+    font-weight: bold;
+    max-width: 100%;
+    white-space: nowrap;
+}
+#note{
+    font-size: 22.5px;
+    font-weight: bold;
+    margin-top: -10px;
+    padding-bottom: 25px;
+}
+#sec_head{
+    font-size: 40px;
+    font-weight: bold;
+}
+#sec_head span{
+    position: relative;
+}
+.na-me{
+    color: #07ff87;
+}
+#pipe{
+    color: rgb(30, 216, 30);
+}
+.img-fluid{
+    height: 100%;
+    width: 75%;
+}
+.tab-titles{
+    display: flex;  
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 22.5px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #07ff87;
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    transition: 0.2s;
+}
+.tab-links.active-link::after{
+    width: 80%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #00bf63;
+    font-weight: bold;
+}
+.tab-contents ul li a{
+    text-decoration: none;
+}
+#content{
+    font-size: 22.5px;
+    font-weight: bold;
+}
+.work-con{
+    margin-top: -50px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#skill-data{
+    background-color:rgb(8, 8, 8);
+    color: white; 
+    transition: background-color 0.5s, transform 0.5s;
+}
+#skill-data:hover{
+    background-color: #00bf63;
+    transform: translateY(-10px);
+}
+#img{
+    border-radius: 100%;
+}
+#card-st{
+    background-color: #00bf63;
+    transition: background-color 0.5s;
+}
+#card-st:hover{
+    background-color: red;
+}
+#project-data{
+    background-color: rgb(8, 8, 8);
+    transition: color 0.2s;
+    border-radius: 30px;
+}
+#btn{
+    display: fluid;
+    align-items: center;
+}
+.btn{
+    background-color: #000000;
+    color: #00bf63;
+    transition: background-color 0.5s, transform 0.5s;
+}
+.btn:hover{
+    background-color: #000000;
+    transform: translateY(-5px);
+}
+#name{
+    background-color: rgb(8, 8, 8);
+    color: white;
+    border-color: rgb(8, 8, 8);
+}
+#email{
+    background-color: rgb(8, 8, 8);
+    color: white;
+    border-color: rgb(8, 8, 8);
+}
+#subject{
+    background-color: rgb(8, 8, 8);
+    color: white;
+    border-color: rgb(8, 8, 8);
+}
+#submit-btn{
+    font-size: 20px; 
+    font-weight: bold; 
+    font-style: italic; 
+    color: white; 
+    background-color: green;
+    transition: color 0.5s, transform 0.5s;
+}
+#submit-btn:hover{
+    color: rgb(209, 199, 199);
+    transform: translateY(-5px);
+}
+#contact{
+    background-color: #000000;
+}
+#social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#social a i{
+    color: #07ff87;
+    font-size: 35px;
+    padding: 20px;
+    transition: color 0.5s, transform 0.5s;
+}
+#social a i:hover{
+    color: blue;
+    transform: translateY(-5px);
+}
+#copyright{
+    height: 16px;
+    width: 16px;
+}
+#domain{
+    text-decoration: none;
+}
+#menu{
+    display: none;
+}
+#onmenu{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        width: 100%;
+    }
+    .navbar-toggler-icon{
+        width: 20px;
+        height: 20px;
+    }
+    #banner{
+        background-image: url(Images/Blac.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 140px;
+        color: rgb(231, 230, 230);
+        margin-top: -270px;
+        height: 700px;
+    }
+    #logo{
+        height: 280px;
+        width: 150px;
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+    #top_head{
+        display: none;
+    }
+    #note{
+        display: none;
+    }
+    #sec_head{
+        padding-top: 20px;
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .img-fluid{
+        height: 110%;
+        width: 110%;
+    }
+    #content{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .work-con{
+        margin-top: -35px;
+    }
+    #sec_head span{
+        position: relative;
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 15px 40px;
+        overflow-x: scroll;
+    }
+    #social a i{
+        color: #07ff87;
+        font-size: 25px;
+        padding: 10px;
+        transition: color 0.5s, transform 0.5s;
+    }
+    #social a i:hover{
+        color: blue;
+        transform: translateY(-5px);
+    }
+    #menu{
+        display: block;
+        font-size: 30px;
+    }
+    #onmenu{
+        display: block;
+        font-size: 30px;
+    }
+    nav ul{
+        padding-top: 200px;
+        margin-right: 0%;
+        background-color: #000000;
+        color: #07ff87;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: -webkit-fill-available;
+        padding-top: 250px;
+        z-index: 2;
+        transition: right 0.6s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul #menu{
+        position: absolute;
+        margin-top: -300px;
+        left: 20px;
+        cursor: pointer;
+    }
+    nav #onmenu{
+        margin-top: -300px;
+        margin-left: 300px;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+    body{
+        width: 95%;
+    }
+    .navbar-toggler-icon{
+        width: 20px;
+        height: 20px;
+    }
+    #banner{
+        background-image: url(Images/Blac.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 140px;
+        color: rgb(231, 230, 230);
+        margin-top: -270px;
+        height: 700px;
+    }
+    #logo{
+        height: 280px;
+        width: 150px;
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+    #top_head{
+        display: none;
+    }
+    #note{
+        display: none;
+    }
+    #sec_head{
+        padding-top: 20px;
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .img-fluid{
+        height: 100%;
+        width: 110%;
+    }
+    #content{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .work-con{
+        margin-top: -35px;
+    }
+    #sec_head span{
+        position: relative;
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 15px 40px;
+        overflow-x: scroll;
+    }
+    #social a i{
+        color: #07ff87;
+        font-size: 25px;
+        padding: 10px;
+        transition: color 0.5s, transform 0.5s;
+    }
+    #social a i:hover{
+        color: blue;
+        transform: translateY(-5px);
+    }
+    #menu{
+        display: block;
+        font-size: 30px;
+    }
+    #onmenu{
+        display: block;
+        font-size: 30px;
+    }
+    nav ul{
+        padding-top: 200px;
+        margin-right: 0%;
+        background-color: #000000;
+        color: #07ff87;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: -webkit-fill-available;
+        padding-top: 250px;
+        z-index: 2;
+        transition: right 0.6s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul #menu{
+        position: absolute;
+        margin-top: -300px;
+        left: 20px;
+        cursor: pointer;
+    }
+    nav #onmenu{
+        margin-top: -300px;
+        margin-left: 700px;
+        cursor: pointer;
+    }
+}
+#msg{
+    color: #07ff87;
+    margin-top: -10px;
+    display: block;
+}

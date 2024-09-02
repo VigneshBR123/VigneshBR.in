@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/v-preview.png" type="image/png">
+    <title>Vignesh BR</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Teko:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/8b38847e8e.js" crossorigin="anonymous"></script> 
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="Images/Logo.png" alt="" id="logo"></a>
+              </div>
+              <ul class="ms-auto gap-3" id="sidemenu">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" style="font-size: 20px; font-weight: bold;">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#aboutme" style="font-size: 18px; font-weight: bold;">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#skills" style="font-size: 18px; font-weight: bold;">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#projects" style="font-size: 18px; font-weight: bold;">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#contact" style="font-size: 18px; font-weight: bold;">Contact</a>
+                </li>
+                <i class="fa-regular fa-circle-xmark" id="menu" onclick="closemenu()"></i>
+              </ul>
+              <i class="fa-solid fa-bars" id="onmenu" onclick="openmenu()"></i>
+            </nav>
+              <section class="text-center px-0 pb-5" id="banner">
+                <div class="container-fluid row-fix title-container ms-0 ">
+                  <div class="row">
+                      <div class="col-md-12 " id="inner_banner">
+                        <div class="px-auto">
+                          <h2 class="" id="top_head">VIGNESH BR</h2>
+                          <p class="" id="note">Website Desis<span style="color: rgb(30, 216, 30);">gn</span>er</p>
+                        </div>
+                        <div class="w-75 m-auto">
+                          <h3 id="sec_head">Welcome to <span class="na-me">My Portfolio...! ✨</span></h3>
+                          <p id="content">🚀Hello there! <span class="na-me">I'm Vignesh BR,</span> a passionate and creative web developer and designer. <br>
+                          Welcome to my digital space where I showcase my journey, skills, and projects.<br>Call: (+91)8220545256</p>
+                          <p id="content"><br>Website Development <span id="pipe">||</span> WebGallary Development <span id="pipe">||</span> Poster Designing</p>
+                          <p id="content" class="work-con"><br>Frame Designing <span id="pipe">||</span> Cloth Branding</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </section>
+              <section class="">
+                <div class="container">
+                  <div class="row ">
+                  <div class="col-12 col-md-6 text-center p-2">
+                    <img src="Images/preview.png" alt="Image description" class="img-fluid" id="img"/>
+                  </div>                  
+                    <div class="col-md-6 p-3" id="aboutme">
+                      <h3 id="sec_head" class="">About <span class="na-me">Me</span></h3>
+                      <p class="">Iam a passionate consultant to work in the designing and development to fulfill your requirements to make your business more effective.
+                        I have always enjoyed coming up with innovative solutions for your challenges.
+                        I like to apply critical thinking and problem-solving techniques to solve your's complicated issues.</p>
+                        <div class="tab-titles">
+                          <p class="tab-links active-link" onclick="opentab('experiance')">Experiance</p>
+                          <p class="tab-links" onclick="opentab('education')">Education</p>
+                          <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="experiance">
+                          <ul>
+                            <li><span>QA Engineer</span><br>Started <a href="https://weace.in/" target="blank">@WeAce Pvt Ltd</a> as a QA Engineer <br>in Manhattan.</li>
+                            <li><span>WebApp Development</span><br>Major Project Development <a href="https://www.rcet.org.in/" target="blank">@RCET</a> with <br> Python-Django.</li>
+                          </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                          <ul>
+                            <li><span>MBA in S/M Management </span><br>2024 - 2026 <small>(Intermediade)</small> <a href="https://mcetengg.org/" target="blank">@MCET</a> affiliated to Anna<br>University.</li>
+                            <li><span>BE in Computer Science</span><br>2020 - 2024 <a href="https://www.rcet.org.in/" target="blank">@RCET</a> affiliated to Anna <br> University.</li>
+                          </ul>
+                        </div>
+                        <div class="tab-contents" id="certification">
+                          <ul>
+                            <li><span>Python For Data Science</span><br>Elite certification from <a href="https://nptel.ac.in/" target="blank">@NPTEL</a> with good grade<br> in 2023.</li>
+                            <li><span>Course Completion Certificates</span><br>Python & JavaScript <a href="https://www.scaler.com/" target="blank">@Scaler</a> in 2023 &<br> 2024. </li>
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="skill-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="skills" id="skills">
+                      <h1 class="text-center m-4" id="sec_head">Skills</h1>
+                    </div>
+                    <div class="col-md-3" >
+                      <div class="card border border-0 shadow p-3 mb-5 rounded" id="skill-data">
+                        <img src="Images/python.png" class="card-img-top w-50 m-auto" alt=""/>
+                        <div class="card-body">
+                          <h3 class="card-title">Python</h3>
+                          <h6 class="card-text"> <b>Familiar with:</b> Django | Numpy | Pandas | Matplotlib | Seaborn</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card border border-0 shadow p-3 mb-5 rounded" id="skill-data">
+                        <img src="Images/website.png" class="card-img-top w-50 m-auto" alt=""/>
+                        <div class="card-body">
+                          <h3 class="card-title">WebDesign</h3>
+                          <h6 class="card-text"> <b>Familiar with:</b> Html | Css | JavaScript | JQuery | Bootstrap</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card border border-0 shadow p-3 mb-5 rounded" id="skill-data">
+                        <img src="Images/database.png" class="card-img-top w-50 m-auto" alt=""/>
+                        <div class="card-body">
+                          <h3 class="card-title">DataBase</h3>
+                          <h6 class="card-text"> <b>Familiar with:</b> SQL <br> MySql | Postgresql | django-Sqlite</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card border border-0 shadow p-3 mb-5 rounded" id="skill-data">
+                        <img src="Images/tools.png" class="card-img-top w-50 m-auto " alt=""/>
+                        <div class="card-body">
+                          <h3 class="card-title">Tools</h3>
+                          <h6 class="card-text"> <b>Familiar with:</b> Linux Distros| GitHub| Google Sites| WordPress| Canva</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="" id="projects">
+                <div class="container">
+                  <div class="row">
+                    <div class="project">
+                      <h1 class="text-center m-4" id="sec_head">Projects</h1>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border border-0 mt-3 shadow mb-5 rounded" id="card-st">
+                        <div class="card-body p-5" id="project-data">
+                          <h3 class="card-title text-center"><b>TIC-TAC-TOE</b></h3>
+                          <h6 class="card-subtitle mb-2 text-center">A XO-Game</h6>
+                          <p class="card-text text-center">which is developed in motive of playing xo-game online with same device.
+                            JavaScript is used for backend. Html and Css for frontend.
+                          </p>
+                          <div class="text-center">
+                            <a href="https://x-and-o.neocities.org/tic-tac-toe/home_page" target="_blank" class="btn btn-success bg-black">Play Game</a>
+                          </div>
+                          <p class="card-text text-center pt-3"><b>Source code : </b><a href="https://github.com/VigneshBR123/tic-tac-toe" target="_blank" style="text-decoration: none;">GitHub</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border border-0 mt-3 shadow mb-5 rounded" id="card-st">
+                        <div class="card-body p-5" id="project-data">
+                          <h3 class="card-title text-center"><b>VIGNESH BR</b></h3>
+                          <h6 class="card-subtitle mb-2 text-body-secondary text-center">MY PORTFOLIO WEBSITE</h6>
+                          <p class="card-text text-center">Web Designing based project which is developed in motive of showcase my skills and project experiance.
+                            Bootstrap is used for designing.
+                          </p>
+                          <div class="text-center">
+                            <a href="" class="btn btn-success bg-black">View Site</a>
+                          </div>
+                          <p class="card-text text-center pt-3"><b>Source code : </b><a href="https://github.com/VigneshBR123/my-portfolio" target="_blank" style="text-decoration: none;">GitHub</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border border-0 mt-3 mb-5 shadow mb-5 rounded" id="card-st">
+                        <div class="card-body p-5" id="project-data">
+                          <h3 class="card-title text-center"><b>LocalMarketPlace</b></h3>
+                          <h6 class="card-subtitle mb-2 text-body-secondary text-center">Regional CraftedHub</h6>
+                          <p class="card-text text-center">Regional CraftedHub: Empowering Communities with Tailored Talent-Neighborhood Freelancer Marketplace for Local Services.</p>
+                          <div class="text-center">
+                            <a href="https://vigneshbr.pythonanywhere.com/" class="btn btn-success bg-black" target="_blank">View Site</a>
+                          </div>
+                          <p class="card-text text-center pt-3"><b>Source code : </b><a href="https://github.com/VigneshBR123/LocalMarketPlace" target="_blank" style="text-decoration: none;">GitHub</a></p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="text-light" id="contact">
+                <div class="container">
+                  <div class="row">
+                    <div class="project">
+                      <h1 class="text-center m-4" id="sec_head">Contact</h1>
+                    </div>
+                </div>
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6">
+                        <form name="submit-to-google-sheet" action="https://api.web3forms.com/submit" method="POST">
+                          <input type="hidden" name="access_key" value="4a2bc310-c8c5-4846-87a0-6366e2af3775">
+                          <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Name</label>
+                            <input id="name" type="test" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" name="Name" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputSubject" class="form-label">Your Message</label>
+                            <textarea id="subject" class="form-control" id="exampleInputSubject"  rows="2" name="Comment" required></textarea>
+                          </div>
+                          <button type="submit" id="submit-btn" class="btn text-center px-3 py-0">Submit</button>
+                        </form>
+                        <hr>
+                        <span id="msg"></span>
+                      </div>
+                    </div>
+                  </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="footercontainer">
+                      <div class="socialicons" id="social">
+                        <a href="mailto:vig.br2002@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/+918220545256?text=Hii Vignesh..." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://t.me/VigneshBR2002" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/vignesh-br-104060br/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/VigneshBR123" target="_blank"><i class="fa-brands fa-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer class="bg-black text-center">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p style="font-weight: bold; font-style: italic; color: aliceblue;" class="p-3"><i><img src="Images/copyright.png" alt="" id="copyright"></i><small> Copyright@2024 <a href="" id="domain">vigneshbr.in</a>. All rights are reserved.</small></p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+        </div>
+    </div> 
+    <script>
+      var tablinks=document.getElementsByClassName("tab-links")
+      var tabcontens=document.getElementsByClassName("tab-contents")
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabconten of tabcontens){
+          tabconten.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+      }
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-250px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyyTZm9CU_uyEV_KgkrlbJBfcB_UwsQwp0JkfnzTx0H206OJQ_Ry-Irbh0ZZ-GbSOJX8Q/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message Sent Successfully..."
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
